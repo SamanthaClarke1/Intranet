@@ -19,8 +19,8 @@ var isMullum = true;
 var mBlue = 219; // only if isMullum
 var mOrange = 170; // only if isMullum
 
-var POINTSx = 100;
-var POINTSy = 80;
+var POINTSx = 20;
+var POINTSy = 18;
 var EXTS = 3; // generated off the edges so that it doesn't go weird
 var RAND = 0.85; // only works with not perlin / random
 var COLORSEV = 0.175; // only works with perlin
