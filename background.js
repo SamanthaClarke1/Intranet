@@ -24,6 +24,8 @@ var COLORSEV = 0.175; // only works with perlin
 var MOVESEV = 0.01; // only works with isAlive
 var MOVESPEED = 0.2; // only works with isAlive
 
+var hpadding = 0;
+
 // SETUP 
 function setup() {
    if(isMullum) {
@@ -32,7 +34,7 @@ function setup() {
    frameRate(5);
 
    var brect = document.getElementById("body").getBoundingClientRect();
-   var canvas = createCanvas(brect.width, brect.height + windowHeight);
+   var canvas = createCanvas(brect.width, brect.height + hpadding);
    background(66);
    canvas.parent("sketch-holder");
   
