@@ -20,8 +20,8 @@ var POINTSy = 8;
 var EXTS = 3; // generated off the edges so that it doesn't go weird
 var RAND = 0.85; // only works with not perlin / random
 var COLORSEV = 0.175; // only works with perlin
-var MOVESEV = 0.01; // only works with isAlive
-var MOVESPEED = 1.5; // only works with isAlive
+var MOVESEV = 0.04; // only works with isAlive
+var MOVESPEED = 0.3; // only works with isAlive
 
 // SETUP 
 function setup() {
@@ -64,7 +64,7 @@ function draw() {
          for(var j = 0; j < grid[i].length; j++) {
             grid[i][j].x += (noise(toff) - .5) * MOVESPEED;
             grid[i][j].y += (noise(toff + 9999) - .5) * MOVESPEED;
-            toff += MOVESEV;
+            toff += MOVESEV * .8;
             
             if(mouseControl && mouseIsPressed && (   distance(grid[i][j], stp1(pmouseX, mouseX), stp1(pmouseY, mouseY)) < 13 
                                                   || distance(grid[i][j], stp2(pmouseX, mouseX), stp2(pmouseY, mouseY)) < 13
