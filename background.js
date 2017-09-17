@@ -22,7 +22,7 @@ var EXTS = 3; // generated off the edges so that it doesn't go weird
 var RAND = 0.85; // only works with not perlin / random
 var COLORSEV = 0.175; // only works with perlin
 var MOVESEV = 0.04; // only works with isAlive
-var MOVESPEED = 0.3; // only works with isAlive
+var MOVESPEED = 0.8; // only works with isAlive
 
 // SETUP 
 function setup() {
