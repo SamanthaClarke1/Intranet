@@ -13,7 +13,7 @@ var mouseControl = false;
 
 var isMullum = true;
 var mBlue = 219; // only if isMullum
-var mOrange = 175; // only if isMullum
+var mOrange = 170; // only if isMullum
 
 var POINTSx = 10;
 var POINTSy = 8;
