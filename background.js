@@ -1,21 +1,22 @@
+// samuel clarke 2017
 
 var grid = []
 var xoff = 0;
 
 var isPerlin = true;
-var isAlive = true;
+var isAlive = false;
 var isMonochrome = false;
 
 var choosesShortest = false; // i recommend keeping this to the opposite of isAlive
 var colorGoodizer = true;
-var mouseControl = true;
+var mouseControl = false;
 
 var isMullum = true;
 var mBlue = 254; // only if isMullum
 var mOrange = 175; // only if isMullum
 
-var POINTSx = 11;
-var POINTSy = 9;
+var POINTSx = 10;
+var POINTSy = 8;
 var EXTS = 3; // generated off the edges so that it doesn't go weird
 var RAND = 0.85; // only works with not perlin / random
 var COLORSEV = 0.175; // only works with perlin
