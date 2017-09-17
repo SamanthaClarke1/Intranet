@@ -28,6 +28,10 @@ function setup() {
    var canvas = createCanvas(brect.width, brect.height + windowHeight);
    background(66);
    canvas.parent("sketch-holder");
+	
+   if(isMullum) {
+	colorMode(HSB, 255);
+   }
   
    var noff = 0;
    for(var i = -EXTS; i < POINTSy + EXTS; i++) {
