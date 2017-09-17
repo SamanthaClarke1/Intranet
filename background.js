@@ -16,8 +16,8 @@ var mouseControl = true;
 var shouldStroke = false;
 
 var isMullum = true;
-var mBlue = 219; // only if isMullum
-var mOrange = 170; // only if isMullum
+var mBlue = 222; // only if isMullum
+var mOrange = 165; // only if isMullum
 
 var POINTSx = 12;
 var POINTSy = 10;
@@ -69,9 +69,9 @@ function draw() {
       var toff = xoff;
       for(var i = 0; i < grid.length; i++) {
          for(var j = 0; j < grid[i].length; j++) {
-            grid[i][j].aggR += (noise(toff) - .5) * MOVESPEED;
-            grid[i][j].aggG += (noise(toff + 109) - .5) * MOVESPEED;
-	    grid[i][j].aggB += (noise(toff + 209) - .5) * MOVESPEED;
+            grid[i][j].aggR += (noise(toff) - .5) * MOVESPEED * 1.5;
+            grid[i][j].aggG += (noise(toff + 109) - .5) * MOVESPEED * 1.5;
+	    grid[i][j].aggB += (noise(toff + 209) - .5) * MOVESPEED * 1.5;
 	    grid[i][j].x += (noise(toff + 309) - .5) * MOVESPEED * 7.5;
             grid[i][j].y += (noise(toff + 409) - .5) * MOVESPEED * 7.5;
 		 
