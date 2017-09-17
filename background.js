@@ -24,14 +24,14 @@ var MOVESEV = 0.05; // only works with isAlive
 
 // SETUP 
 function setup() {
+   if(isMullum) {
+	colorMode(HSB, 255);
+   }
+
    var brect = document.getElementById("body").getBoundingClientRect();
    var canvas = createCanvas(brect.width, brect.height + windowHeight);
    background(66);
    canvas.parent("sketch-holder");
-	
-   if(isMullum) {
-	colorMode(HSB, 255);
-   }
   
    var noff = 0;
    for(var i = -EXTS; i < POINTSy + EXTS; i++) {
