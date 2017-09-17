@@ -24,8 +24,8 @@ var POINTSy = 10;
 var EXTS = 3; // generated off the edges so that it doesn't go weird
 var RAND = 0.85; // only works with not perlin / random
 var COLORSEV = 0.175; // only works with perlin
-var MOVESEV = 0.01; // only works with isAlive
-var MOVESPEED = 0.05; // only works with isAlive
+var MOVESEV = 0.005; // only works with isAlive
+var MOVESPEED = 0.06; // only works with isAlive
 
 var hpadding = 0;
 
@@ -72,8 +72,8 @@ function draw() {
             grid[i][j].aggR += (noise(toff) - .5) * MOVESPEED;
             grid[i][j].aggG += (noise(toff + 109) - .5) * MOVESPEED;
 	    grid[i][j].aggB += (noise(toff + 209) - .5) * MOVESPEED;
-	    grid[i][j].x += (noise(toff + 309) - .5) * MOVESPEED * 5;
-            grid[i][j].y += (noise(toff + 409) - .5) * MOVESPEED * 5;
+	    grid[i][j].x += (noise(toff + 309) - .5) * MOVESPEED * 7.5;
+            grid[i][j].y += (noise(toff + 409) - .5) * MOVESPEED * 7.5;
 		 
             toff += MOVESEV * .8;
             
