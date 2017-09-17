@@ -72,8 +72,8 @@ function draw() {
             grid[i][j].aggR += (noise(toff) - .5) * MOVESPEED;
             grid[i][j].aggG += (noise(toff + 109) - .5) * MOVESPEED;
 	    grid[i][j].aggB += (noise(toff + 209) - .5) * MOVESPEED;
-	    grid[i][j].x += (noise(toff + 309) - .5) * MOVESPEED;
-            grid[i][j].y += (noise(toff + 409) - .5) * MOVESPEED;
+	    grid[i][j].x += (noise(toff + 309) - .5) * MOVESPEED * 5;
+            grid[i][j].y += (noise(toff + 409) - .5) * MOVESPEED * 5;
 		 
             toff += MOVESEV * .8;
             
