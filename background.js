@@ -4,7 +4,7 @@ var grid = []
 var xoff = 0;
 
 var isPerlin = true;
-var isAlive = false;
+var isAlive = true;
 var isMonochrome = false;
 
 var choosesShortest = false; // i recommend keeping this to the opposite of isAlive
@@ -12,7 +12,7 @@ var colorGoodizer = true;
 var mouseControl = false;
 
 var isMullum = true;
-var mBlue = 223; // only if isMullum
+var mBlue = 219; // only if isMullum
 var mOrange = 175; // only if isMullum
 
 var POINTSx = 10;
@@ -20,7 +20,8 @@ var POINTSy = 8;
 var EXTS = 3; // generated off the edges so that it doesn't go weird
 var RAND = 0.85; // only works with not perlin / random
 var COLORSEV = 0.175; // only works with perlin
-var MOVESEV = 0.05; // only works with isAlive
+var MOVESEV = 0.01; // only works with isAlive
+var MOVESPEED = 0.5; // only works with isAlive
 
 // SETUP 
 function setup() {
@@ -61,8 +62,8 @@ function draw() {
       var toff = xoff;
       for(var i = 0; i < grid.length; i++) {
          for(var j = 0; j < grid[i].length; j++) {
-            grid[i][j].x += (noise(toff) - .5) * RAND / 2;
-            grid[i][j].y += (noise(toff + 9999) - .5) * RAND / 2;
+            grid[i][j].x += (noise(toff) - .5) * MOVESPEED;
+            grid[i][j].y += (noise(toff + 9999) - .5) * MOVESPEED;
             toff += MOVESEV;
             
             if(mouseControl && mouseIsPressed && (   distance(grid[i][j], stp1(pmouseX, mouseX), stp1(pmouseY, mouseY)) < 13 
