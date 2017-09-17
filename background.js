@@ -78,11 +78,8 @@ function draw() {
             toff += MOVESEV * .8;
             
             if(mouseControl && mouseIsPressed && (   distance(grid[i][j], stp1(pmouseX, mouseX), stp1(pmouseY, mouseY)) < 13 
-                                                  || distance(grid[i][j], stp2(pmouseX, mouseX), stp2(pmouseY, mouseY)) < 13
                                                   || distance(grid[i][j], stp3(pmouseX, mouseX), stp3(pmouseY, mouseY)) < 13
-                                                  || distance(grid[i][j], stp4(pmouseX, mouseX), stp4(pmouseY, mouseY)) < 13
                                                   || distance(grid[i][j], stp5(pmouseX, mouseX), stp5(pmouseY, mouseY)) < 13
-                                                  || distance(grid[i][j], stp6(pmouseX, mouseX), stp6(pmouseY, mouseY)) < 13
                                                   || distance(grid[i][j], stp7(pmouseX, mouseX), stp7(pmouseY, mouseY)) < 13)) {
                grid[i][j].x = mouseX;
                grid[i][j].y = mouseY;
