@@ -19,7 +19,8 @@ var MOVESEV = 0.05; // only works with isAlive
 
 // SETUP 
 function setup() {
-   var canvas = createCanvas(windowWidth * .99, windowHeight);
+   var brect = document.getElementById("body").getBoundingClientRect();
+   var canvas = createCanvas(brect.width, brect.height);
    background(66);
    canvas.parent('sketch-holder');
   
