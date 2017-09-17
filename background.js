@@ -150,8 +150,8 @@ function Point(x, y, xoff, yoff) {
    if(isMullum) {
       // keep in mind this is now HSB
       this.aggR = map(noise(xoff + 500, yoff + 500), 0, 1, mBlue, mOrange) % 255; // HUE 175 = lblue 185 = blue 65 = orange
-      this.aggG = map(noise(xoff + 1500, yoff + 1500), 0, 1, 150, 255); // SAT
-      this.aggB = map(noise(xoff + 2500, yoff + 2500), 0, 1, 125, 255); // BRI
+      this.aggG = map(noise(xoff + 1500, yoff + 1500), 0, 1, 160, 255); // SAT
+      this.aggB = map(noise(xoff + 2500, yoff + 2500), 0, 1, 130, 255); // BRI
    }
    if(colorGoodizer) {
       this.aggR = goodize(this.aggR);
