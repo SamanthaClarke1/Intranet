@@ -9,7 +9,7 @@ var isMonochrome = false;
 
 var choosesShortest = false; // i recommend keeping this to the opposite of isAlive
 var colorGoodizer = true;
-var mouseControl = false;
+var mouseControl = true; 
 
 var isMullum = true;
 var mBlue = 219; // only if isMullum
