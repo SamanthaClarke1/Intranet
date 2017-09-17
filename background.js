@@ -4,7 +4,7 @@ var grid = []
 var xoff = 0;
 
 var isPerlin = true;
-var isAlive = false;
+var isAlive = true;
 var isMonochrome = false;
 
 var choosesShortest = true; // i recommend keeping this to the opposite of isAlive
@@ -63,8 +63,9 @@ function draw() {
       var toff = xoff;
       for(var i = 0; i < grid.length; i++) {
          for(var j = 0; j < grid[i].length; j++) {
-            grid[i][j].x += (noise(toff) - .5) * MOVESPEED;
-            grid[i][j].y += (noise(toff + 9999) - .5) * MOVESPEED;
+            grid[i][j].aggR += (noise(toff) - .5) * MOVESPEED;
+            grid[i][j].aggG += (noise(toff + 9999) - .5) * MOVESPEED;
+	    grid[i][j].aggB += (noise(toff + 4999) - .5) * MOVESPEED;
             toff += MOVESEV * .8;
             
             if(mouseControl && mouseIsPressed && (   distance(grid[i][j], stp1(pmouseX, mouseX), stp1(pmouseY, mouseY)) < 13 
