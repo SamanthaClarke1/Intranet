@@ -7,7 +7,7 @@ var isPerlin = true;
 var isAlive = false;
 var isMonochrome = false;
 
-var choosesShortest = false; // i recommend keeping this to the opposite of isAlive
+var choosesShortest = true; // i recommend keeping this to the opposite of isAlive
 var colorGoodizer = true;
 var mouseControl = true; 
 
