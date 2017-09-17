@@ -16,16 +16,16 @@ var mouseControl = true;
 var shouldStroke = false;
 
 var isMullum = true;
-var mBlue = 222; // only if isMullum
-var mOrange = 165; // only if isMullum
+var mBlue = 218; // only if isMullum
+var mOrange = 182; // only if isMullum
 
-var POINTSx = 12;
-var POINTSy = 10;
+var POINTSx = 20;
+var POINTSy = 18;
 var EXTS = 3; // generated off the edges so that it doesn't go weird
 var RAND = 0.85; // only works with not perlin / random
-var COLORSEV = 0.175; // only works with perlin
-var MOVESEV = 0.02; // only works with isAlive
-var MOVESPEED = 0.075; // only works with isAlive
+var COLORSEV = 0.145; // only works with perlin
+var MOVESEV = 0.018; // only works with isAlive
+var MOVESPEED = 0.11; // only works with isAlive
 
 var hpadding = 0;
 
@@ -150,8 +150,8 @@ function Point(x, y, xoff, yoff) {
    if(isMullum) {
       // keep in mind this is now HSB
       this.aggR = map(noise(xoff + 500, yoff + 500), 0, 1, mBlue, mOrange) % 255; // HUE 175 = lblue 185 = blue 65 = orange
-      this.aggG = map(noise(xoff + 1500, yoff + 1500), 0, 1, 160, 255); // SAT
-      this.aggB = map(noise(xoff + 2500, yoff + 2500), 0, 1, 130, 255); // BRI
+      this.aggG = map(noise(xoff + 1500, yoff + 1500), 0, 1, 170, 255); // SAT
+      this.aggB = map(noise(xoff + 2500, yoff + 2500), 0, 1, 185, 290); // BRI
    }
    if(colorGoodizer) {
       this.aggR = goodize(this.aggR);
