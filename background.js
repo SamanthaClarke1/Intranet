@@ -1,5 +1,8 @@
 // samuel clarke 2017/09/17
 
+console.log("Background animation by Samuel Clarke. 17/09/2017. ");
+console.log("Delaunay Triangulation: https://en.wikipedia.org/wiki/Delaunay_triangulation .");
+
 var grid = []
 var xoff = 0;
 
@@ -16,8 +19,8 @@ var isMullum = true;
 var mBlue = 219; // only if isMullum
 var mOrange = 170; // only if isMullum
 
-var POINTSx = 10;
-var POINTSy = 8;
+var POINTSx = 100;
+var POINTSy = 80;
 var EXTS = 3; // generated off the edges so that it doesn't go weird
 var RAND = 0.85; // only works with not perlin / random
 var COLORSEV = 0.175; // only works with perlin
