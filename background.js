@@ -29,7 +29,7 @@ function setup() {
    if(isMullum) {
 	colorMode(HSB, 255);
    }
-   framerate(2);
+   frameRate(2);
 
    var brect = document.getElementById("body").getBoundingClientRect();
    var canvas = createCanvas(brect.width, brect.height + windowHeight);
