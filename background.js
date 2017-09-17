@@ -22,7 +22,7 @@ function setup() {
    var brect = document.getElementById("body").getBoundingClientRect();
    var canvas = createCanvas(brect.width, brect.height + windowHeight);
    background(66);
-   canvas.parent('sketch-holder');
+   canvas.position(0, 0);
   
    var noff = 0;
    for(var i = -EXTS; i < POINTSy + EXTS; i++) {
