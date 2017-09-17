@@ -70,8 +70,11 @@ function draw() {
       for(var i = 0; i < grid.length; i++) {
          for(var j = 0; j < grid[i].length; j++) {
             grid[i][j].aggR += (noise(toff) - .5) * MOVESPEED;
-            grid[i][j].aggG += (noise(toff + 9999) - .5) * MOVESPEED;
-	    grid[i][j].aggB += (noise(toff + 4999) - .5) * MOVESPEED;
+            grid[i][j].aggG += (noise(toff + 109) - .5) * MOVESPEED;
+	    grid[i][j].aggB += (noise(toff + 209) - .5) * MOVESPEED;
+	    grid[i][j].x += (noise(toff + 309) - .5) * MOVESPEED;
+            grid[i][j].y += (noise(toff + 409) - .5) * MOVESPEED;
+		 
             toff += MOVESEV * .8;
             
             if(mouseControl && mouseIsPressed && (   distance(grid[i][j], stp1(pmouseX, mouseX), stp1(pmouseY, mouseY)) < 13 
