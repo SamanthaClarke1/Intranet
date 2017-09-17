@@ -10,6 +10,10 @@ var choosesShortest = false; // i recommend keeping this to the opposite of isAl
 var colorGoodizer = true;
 var mouseControl = true;
 
+var isMullum = true;
+var mBlue = 254; // only if isMullum
+var mOrange = 175; // only if isMullum
+
 var POINTSx = 11;
 var POINTSy = 9;
 var EXTS = 3; // generated off the edges so that it doesn't go weird
@@ -128,6 +132,12 @@ function Point(x, y, xoff, yoff) {
       this.aggG = this.aggR;
       this.aggB = this.aggR;
    }
+   if(isMullum) {
+      // keep in mind this is now HSB
+      this.aggR = map(noise(xoff + 500, yoff + 500), 0, 1, mBlue, mOrange) % 255; // HUE 175 = lblue 185 = blue 65 = orange
+      this.aggG = map(noise(xoff + 1500, yoff + 1500), 0, 1, 150, 255); // SAT
+      this.aggB = map(noise(xoff + 2500, yoff + 2500), 0, 1, 125, 255); // BRI
+   }
    if(colorGoodizer) {
       this.aggR = goodize(this.aggR);
       this.aggG = goodize(this.aggG);
@@ -163,6 +173,9 @@ function distance(p1, x2, y2){
 
 function goodize(x) {
    x = map(x * x, 0, 255 * 255, 0, 255);
+   if(isMullum) {
+      x = map(x * x, mOrange * mOrange, mBlue * mBlue, mOrange, mBlue);
+   }
    return x;
 }
 
