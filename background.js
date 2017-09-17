@@ -10,6 +10,7 @@ var isMonochrome = false;
 var choosesShortest = true; // i recommend keeping this to the opposite of isAlive
 var colorGoodizer = true;
 var mouseControl = true; 
+var shouldStroke = false;
 
 var isMullum = true;
 var mBlue = 219; // only if isMullum
@@ -101,7 +102,8 @@ function draw() {
             }
             //console.log(i + "  " + j);
 
-            stroke(2);
+	    if(shouldStroke)
+               stroke(2);
             var tRGB = getRGBAgg(tp, sp1, sp1);
             fill(tRGB[0], tRGB[1], tRGB[2]);
             
