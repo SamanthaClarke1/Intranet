@@ -1,20 +1,21 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <div id="sketch-holder" stlye="z-index: -1;"></div> <!-- sketch holder end -->
-	
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MHS Student Intranet</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/custom.css" rel="stylesheet">
-	<link href="css/menu.css" rel="stylesheet">	
+	<link href="css/menu.css" rel="stylesheet">
+	
   </head>
   
-  <body id="body" style="z-index: 100;">
-	<div class="wrapper">		
+	<body id="body" style="z-index: 100;">
+
+		<div id="sketch-holder" stlye="z-index: -1;"></div>
+		
+		<div class="wrapper">
 		
 		<!--- HEADER --->
 		<div id="header">
@@ -211,8 +212,7 @@
 				</div>				
 			</div>
 			
-		</aside>
-		
+		</aside>		
 		
 		<!--- CONTENT --->		
 		<article id="content">
@@ -221,13 +221,16 @@
 		</article>
 
 	</div>
-
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/custom.js"></script>
 	<script src="js/clock.js"></script>
-
-	<script src="background.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.5/p5.js"></script>
-	
+	<script src="js/p5.min.js"></script>
+	<script src="js/background.js"></script>	
+	<!--[if IE]>
+	<script type="text/javascript">
+		window.location = "http://10.181.128.20/intranet/ie/";
+	</script>
+	<![endif]-->
   </body>
 </html>

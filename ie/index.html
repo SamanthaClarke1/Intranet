@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MHS Student Intranet</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/custom.css" rel="stylesheet">	
+  </head>
+  <body onload="startTime()">
+    <div class="row" id="header">
+		
+		<div class="col-xs-12">
+			<div class="row">
+				<div class="col-xs-1" id="logo">
+					<img src="img/crest.png"/ class="img-responsive">
+				</div>
+				<div class="col-xs-11">
+					<div id="mhs">Mullumbimby High School Intranet</div>					
+				</div>
+			</div>
+			
+			<div class="col-xs-offset-2 col-xs-8 col-xs-offset-2">
+				<div class="alert alert-danger text-center">
+					<strong>Attention!</strong> Please use Google Chrome instead of Internet Explorer.
+				</div>
+			</div>
+			
+		</div>
+		
+	</div>
+	
+	 <div class="row">
+		<div class="col-xs-2">
+			<div class="row">
+				<div class="col-xs-8 col-xs-offset-2">
+					<img src="img/google.png"/ class="img-responsive">
+				</div>
+			</div>
+			<div class="row" id="search">
+				<div class="col-xs-10 col-xs-offset-1">
+					<form method="get" action="https://www.google.com/search">
+						<div class="input-group">						
+							<input type="text" name="q" value="" class="form-control">
+							<span class="input-group-btn">
+								<button type="submit" class="btn btn-secondary">Go!</button>
+							</span>						
+						</div>
+					</form>
+				</div>				 
+			</div>	
+		</div>
+		<!--- FIRST COLUMN --->
+		<div class="col-xs-4">
+			<a href="https://student.det.nsw.edu.au/">
+				<div class="big-box">
+					<div class="big-box-top">
+						<img src="img/dec.png" class="center-block logo-responsive">
+					</div>
+					<div class="big-box-lower">
+						Access your school email, log into Google Apps, change your logon password...
+					</div>
+				</div>
+			</a>
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="http://www.mullumtas.com">	
+						<div class="small-box">
+							<div class="small-box-top">
+								<img src="img/moodle.png" class="center-block logo-responsive">
+							</div>
+							<div class="small-box-lower">
+								Access TAS, IST and SDD resources and tasks...
+							</div>
+						</div>
+					</a>	
+				</div>
+				<div class="col-xs-6">
+					<a href="http://student-googleapps.education.nsw.gov.au">
+						<div class="small-box">
+							<div class="small-box-top">
+								<img src="img/gafe.png" class="center-block logo-responsive">
+							</div>
+							<div class="small-box-lower">
+								Google Drive, Docs, Sheets, Slides and more...
+							</div>
+						</div>
+						
+				</div>
+			</div>
+		</div>
+		<!--- SECOND COLUMN --->
+		<div class="col-xs-4">
+			<a href="http://10.181.128.20/portal/">
+				<div class="big-box">
+					<div class="big-box-top">
+						<img src="img/sentral.png" class="center-block logo-responsive">
+					</div>
+					<div class="big-box-lower">
+						Read school notices, access assignments and homework, view your timetable...
+					</div>
+				</div>
+			</a>
+			<div class="row">
+				<div class="col-xs-6">
+					<a href="http://10.181.129.56/media/">	
+						<div class="small-box">
+							<div class="small-box-top">
+								<img src="img/media-server.png" class="center-block logo-responsive">
+							</div>
+							<div class="small-box-lower">
+								Access educational videos for a variety of subject areas...
+							</div>
+						</div>
+					</a>	
+				</div>
+				<div class="col-xs-6">
+					<a href="http://www.mullumbimb-h.schools.nsw.edu.au/">	
+						<div class="small-box">
+							<div class="small-box-top">
+								<img src="img/website.png" class="center-block logo-responsive">
+							</div>
+							<div class="small-box-lower">
+								Access our website for more information about the school...
+							</div>
+						</div>
+					</a>	
+				</div>
+			</div>
+		</div>
+		<div class="col-xs-2">
+			<div class="row">
+				<div class="col-xs-6 text-center">
+					<div id="date-text">
+						
+					</div>
+					<div id="month-text">
+						
+					</div>
+				</div>
+				<div class="col-xs-6 text-center">
+					<div id="time-text">
+						
+					</div>
+					<div id="day-text">
+						
+					</div>
+					<div id="week-text">
+						WEEK 10B
+					</div>
+				</div>
+			</div>		
+		</div>
+	</div>	
+	<script src="js/xmr.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/clock.js"></script>
+  </body>
+</html>

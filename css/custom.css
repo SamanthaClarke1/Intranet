@@ -1,7 +1,8 @@
 body {
 	background-image: url('../img/background.jpg');
-	background-size: 100% 100vh;
+	background-size: 100% 105vh;
 	font-family: Calibri, Arial, Sans-Serif;
+	margin-bottom: 20px;
 }
 
 p {
@@ -123,7 +124,7 @@ a:visited {
 #content {
 	grid-area: main;
 	background-color: #ffffff;
-	min-height: 800px;
+	min-height: 750px;
 	padding-left: 20px;
 	padding-right: 20px;
 	-webkit-box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
